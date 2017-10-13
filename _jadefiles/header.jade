@@ -16,5 +16,5 @@ header.row.navRow#navbarSticky
           li.dropdown: a.dropdown-toggle(href='#' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false') Categories
             span.caret
               ul.dropdown-menu
-                for val in ['japan', 'lady', 'man', 'abroad', '2018', 'spring']
-                  li: a(href='{{ site.base_path }}/categories/#{val}') {{ #{val} | slung2name }}
+                for val in ['japan', 'lady', 'man', 'abroad', 'y2018', 'spring']
+                  li: a(href='{{ site.base_path }}/categories/#{val}') {{ '#{val}' | slung2name }}
