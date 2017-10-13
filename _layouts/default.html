@@ -10,13 +10,14 @@
     <meta name="keywords" content="">
     <link rel="shortcut icon" type="image/png" href="https://yamadagenki.github.io/xushengbo/images/favicon.png">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/stickyfill/1.1.4/stickyfill.min.js"></script>
-    <meta property="og:url" content="{{ site.url }}/">
     <meta property="og:title" content="{{ page.title }} | {{ site.title }}">
     {% if page.description %}
     <meta property="og:image" content='{{ site.url }}{{page.thumbnail}}'>
     <meta property="og:description" content='{{ page.description }}'>
     <meta name="description" content='{{ page.description }}'>
+    <meta property="og:url" content="{{ page.url }}/">
     {% else %}
+    <meta property="og:url" content="{{ site.url }}/">
     <meta property="og:image" content='{{ site.url }}/assets/img/og_img.jpg'>
     <meta property="og:description" content='{{ site.description }}'>
     <meta name="description" content='{{ site.description }}'>
