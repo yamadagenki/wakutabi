@@ -17,4 +17,4 @@ header.row.navRow#navbarSticky
             span.caret
               ul.dropdown-menu
                 for val in ['japan', 'lady', 'man', 'abroad', '2018', 'spring']
-                  li: a(href='{{ site.base_path }}/categories/{{ val }}') {{ val | slung2name }}
+                  li: a(href='{{ site.base_path }}/categories/#{val}') {{ #{val} | slung2name }}
