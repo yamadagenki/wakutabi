@@ -1,6 +1,6 @@
 require 'bundler/setup'
-require 'active_record'
 Bundler.require
+require 'active_record'
 require 'action_view'
 require 'erb'
 include ActionView::Helpers::TextHelper
@@ -8,13 +8,6 @@ include ActionView::Helpers::TextHelper
 Dir[File.expand_path('../libs', __FILE__) << '/*.rb'].each do |file|
   require file
 end
-
-ActiveRecord::Base.establish_connection(
-  adapter:  'mysql2',
-  host:     'localhost',
-  username: 'root',
-  database: 'wakutabi'
-)
 
 Pages.all.each do |page|
   f = File.open("_posts/#{page.date.strftime('%Y-%m-%d')}-tabi.markdown", 'w')

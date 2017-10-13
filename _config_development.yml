@@ -1,5 +1,5 @@
 # Default, Defaults
-exclude: ["node_modules", "gulpfile.js", "package.json", "Gemfile*", "generate_pages.rb", "libs", "vendor"]
+exclude: ["node_modules", "gulpfile.js", "package.json", "Gemfile*", "generate_pages.rb", "libs", "vendor", "insert_csv.rb"]
 
 # Jekyll Defaults
 title: わくたび！
