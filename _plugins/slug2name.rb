@@ -3,7 +3,7 @@ module Jekyll
     def slug2name(input)
       translate = {
         'japan' => '国内旅行',
-        '2018' => '2018年おすすめ',
+        'y2018' => '2018年おすすめ',
         'tokyo' => '東京近郊',
         'spring' => '温泉',
         'lady' => '女子旅'
