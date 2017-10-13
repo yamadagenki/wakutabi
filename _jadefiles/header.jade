@@ -16,12 +16,5 @@ header.row.navRow#navbarSticky
           li.dropdown: a.dropdown-toggle(href='#' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false') Categories
             span.caret
               ul.dropdown-menu
-                // This is where you would list your categories
-                li: a(href='{{ site.base_path }}/categories/japan.html') 国内旅行
-                // li: a(href='{{ site.base_path }}/categories/abroad.html') 海外旅行
-                li: a(href='{{ site.base_path }}/categories/tokyo.html') 東京近郊
-                li: a(href='{{ site.base_path }}/categories/lady.html') 女子旅
-                li: a(href='{{ site.base_path }}/categories/2018.html') 2018年おすすめ
-                li: a(href='{{ site.base_path }}/categories/spring.html') 温泉
-                li: a(href='{{ site.base_path }}/categories/man.html') 男性向け
-                // li: a(href='{{ site.base_path }}/categories/place.html') 家族向け
+                for val, index in ['japan', 'lady', 'man', 'abroad', '2018', 'spring']
+                  li: a(href='{{ site.base_path }}/categories/{{ val }}') {{ val | slung2name }}
