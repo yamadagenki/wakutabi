@@ -1,0 +1,27 @@
+---
+layout: post
+title: <%= @title %>
+date: <%= @date.strftime('%Y-%m-%d') %>
+categories: [<%= @category%>]
+thumbnail: /assets/img/posts/<%= @date.strftime('%Y%m%d') %>_00.jpg
+description: <%= @summary %>
+---
+
+
+## <%= @sub_title1 %>
+
+![<%= @sub_title1 %>]({{site.url}}/assets/img/posts/<%= @date.strftime('%Y%m%d') %>_01.jpg)
+
+<%= @body1 %>
+
+## <%= @sub_title2 %>
+
+![<%= @sub_title2 %>]({{site.url}}/assets/img/posts/<%= @date.strftime('%Y%m%d') %>_02.jpg)
+
+<%= @body2 %>
+
+## <%= @sub_title3 %>
+
+![<%= @sub_title3 %>]({{site.url}}/assets/img/posts/<%= @date.strftime('%Y%m%d') %>_03.jpg)
+
+<%= @body3 %>

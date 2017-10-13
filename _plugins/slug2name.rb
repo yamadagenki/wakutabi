@@ -1,6 +1,7 @@
 module Jekyll
   module Slug2Name
     def slug2name(input)
+      input = [input] unless input.is_a?(Array)
       translate = {
         'japan' => '国内旅行',
         'y2018' => '2018年おすすめ',
@@ -10,7 +11,7 @@ module Jekyll
         'abroad' => '海外旅行',
         'man' => '男子旅'
       }
-      input.map(&:to_s).uniq.map{|item| translate[item]}.join(',')
+      input.map(&:to_s).uniq.map { |item| translate[item] }.join(',')
     end
   end
 end
