@@ -1,0 +1,6 @@
+<article class="col-xs-12 col-sm-4 col-md-3 article-cards">
+  <a href="{{ post.url | prepend: site.base_path }}"><img src='{{ post.thumbnail | prepend: site.base_path }}' class="thumbnails"></a>
+  <h1 class="fs16"><a href="{{ post.url | prepend: site.base_path }}">{{ post.title }}</a></h1>
+  <span class="meta">{{ post.date | date_to_string }}</span><br>
+</article>
+

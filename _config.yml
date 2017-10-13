@@ -1,0 +1,26 @@
+# Default, Defaults
+exclude: ["node_modules", "gulpfile.js", "package.json"]
+
+# Jekyll Defaults
+title: わくたび！
+email: to.be.mr.all.rounder@gmail.com
+description: わくたび！は、わくわくする旅をご紹介する情報サイトです。今年や来年行ってみたい、そんなワクワクするような旅の情報をお届けします。ぜひ、参考にワクワクする旅を
+baseurl: "" # the subpath of your site, e.g. /blog
+
+# Where can people find your site?
+url: "https://yamadagenki.github.io/wakutabi"
+base_path: "/wakutabi"
+permalink: /:year/:month/:day.html
+sass:
+  style: compressed
+
+# When developing, set this ^ equal to whatever localhost you're using
+
+# Socail Media links
+# Use these to link users to your organization's social media sites
+instagram: https://www.instagram.com/explore/tags/わくたび！/
+facebook:
+google:
+
+plugins:
+  - jekyll-sitemap
