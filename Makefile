@@ -1,5 +1,7 @@
 
 deploy:
+	rm -rf _site
+	rm -rf docs
 	gulp build
 	mv _site docs
 	git add .
