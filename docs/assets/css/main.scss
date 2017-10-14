@@ -89,3 +89,15 @@ $padding-base: 5;
 .line-it-button {
   margin-right: 5px;
 }
+
+.row {
+  margin: 0 auto;
+}
+
+[class*="col-"] {
+  padding: 0 10px;
+}
+
+.home-wrap {
+  margin-top: 50px;
+}
