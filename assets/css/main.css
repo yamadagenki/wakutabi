@@ -434,6 +434,7 @@ body {
   -webkit-text-size-adjust: 100%; }
 
 .container {
+  margin-top: 50px;
   min-height: 70vh; }
 
 .no-padding {
