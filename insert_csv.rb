@@ -12,7 +12,7 @@ end
 require 'csv'
 require 'pp'
 
-filename = "tmp.csv"
+filename = "./tmp.csv"
 
 
 def new_line(line)
@@ -31,13 +31,13 @@ CSV.foreach(filename, :col_sep => "\t", :headers => true) do |row|
   category << 'tokyo' if total_body.match(/東京|千葉|埼玉|神奈川|群馬|栃木|山梨/)
   category << 'abroad' if total_body.match(/海外|国外|外国|ヨーロッパ|アメリカ|アジア/)
   Pages.create(
-    title: row[3].tr('０-９ａ-ｚＡ-Ｚ', '0-9a-zA-Z'),
+    title: row[4].tr('０-９ａ-ｚＡ-Ｚ', '0-9a-zA-Z'),
     category: category.join(','),
-    sub_title1: row[5].tr('０-９ａ-ｚＡ-Ｚ', '0-9a-zA-Z'),
-    body1: new_line(row[7]),
-    sub_title2: row[9].tr('０-９ａ-ｚＡ-Ｚ', '0-9a-zA-Z'),
-    body2: new_line(row[11]),
-    sub_title3: row[13].tr('０-９ａ-ｚＡ-Ｚ', '0-9a-zA-Z'),
-    body3: new_line(row[15])
+    sub_title1: row[7].tr('０-９ａ-ｚＡ-Ｚ', '0-9a-zA-Z'),
+    body1: new_line(row[10]),
+    sub_title2: row[13].tr('０-９ａ-ｚＡ-Ｚ', '0-9a-zA-Z'),
+    body2: new_line(row[16]),
+    sub_title3: row[19].tr('０-９ａ-ｚＡ-Ｚ', '0-9a-zA-Z'),
+    body3: new_line(row[22])
   )
 end
