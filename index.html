@@ -29,7 +29,9 @@ url: /
 
   <div class="row">
     <div class="col-xs-12 col-sm-6 half-section half-section-left clearfix">
-      <h3>国内旅行</h3>
+      <h3>
+        <a href="{{ site.base_path }}/categories/japan">{{ 'japan' | slug2name }}</a>
+      </h3>
       {% for post in site.categories.japan limit:2 %}
       <div class="col-xs-12 col-sm-6 article-cards">
         <a href="{{ post.url | prepend: site.base_path }}"><img src='{{ post.thumbnail | prepend: site.base_path }}' class="thumbnails"></a>
@@ -58,7 +60,9 @@ url: /
     </div>
 
     <div class="col-xs-12 col-sm-6 half-section half-section-left">
-      <h3>海外旅行</h3>
+      <h3>
+        <a href="{{ site.base_path }}/categories/abroad">{{ 'abroad' | slug2name }}</a>
+      </h3>
       {% for post in site.categories.abroad limit:2 %}
       <div class="col-xs-12 col-sm-6 article-cards">
         <a href="{{ post.url | prepend: site.base_path }}"><img src='{{ post.thumbnail | prepend: site.base_path }}' class="thumbnails"></a>
@@ -90,7 +94,9 @@ url: /
   </div>
   <div class="row">
     <div class="col-xs-12 col-sm-6 half-section half-section-left clearfix">
-      <h3>東京近郊</h3>
+      <h3>
+        <a href="{{ site.base_path }}/categories/tokyo">{{ 'tokyo' | slug2name }}</a>
+      </h3>
       {% for post in site.categories.tokyo limit:2 %}
       <div class="col-xs-12 col-sm-6 article-cards">
         <a href="{{ post.url | prepend: site.base_path }}"><img src='{{ post.thumbnail | prepend: site.base_path }}' class="thumbnails"></a>
@@ -119,7 +125,9 @@ url: /
     </div>
 
     <div class="col-xs-12 col-sm-6 half-section half-section-left">
-      <h3>2018年おすすめ</h3>
+      <h3>
+        <a href="{{ site.base_path }}/categories/y2018">{{ 'y2018' | slug2name }}</a>
+      </h3>
       {% for post in site.categories.y2018 limit:2 %}
       <div class="col-xs-12 col-sm-6 article-cards">
         <a href="{{ post.url | prepend: site.base_path }}"><img src='{{ post.thumbnail | prepend: site.base_path }}' class="thumbnails"></a>
