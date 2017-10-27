@@ -21,7 +21,6 @@ url: /
       {% for post in site.posts limit:4 offset: 6%}
       <hr>
       <a class="article-cards__title" href="{{ post.url | prepend: site.base_path }}">{{ post.title }}</a>
-      <br>
       <a class="meta" href='{{ site.url }}/categories/{{ post.categories }}.html'>{{ post.categories | slug2name }} </a>
       {% endfor %}
     </div>

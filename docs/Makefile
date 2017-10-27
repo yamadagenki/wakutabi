@@ -1,6 +1,5 @@
 
 deploy:
-	bundle exec ruby generate_pages.rb
 	rm -rf _site
 	rm -rf docs
 	gulp build
