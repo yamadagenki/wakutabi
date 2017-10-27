@@ -1,0 +1,5 @@
+<div class="col-xs-12 col-sm-4 col-md-3 article-cards">
+  <span class="meta date">{{ post.date | date_to_string }}</span>
+  <a href="{{ post.url | prepend: site.base_path }}" class="article-cards__link" style="background-image: url({{ post.thumbnail | prepend: site.base_path }})"></a>
+  <a class='article-cards__title' href="{{ post.url | prepend: site.base_path }}">{{ post.title }}</a>
+</div>
