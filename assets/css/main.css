@@ -398,8 +398,6 @@ p {
   text-transform: capitalize;
   color: #727272;
   font-size: 12px; }
-  .meta:hover {
-    text-decoration: underline; }
 
 .meta.date {
   text-decoration: none; }
