@@ -2,7 +2,7 @@
 layout: post
 title: 珊瑚礁と海が美しい南太平洋の楽園
 date: 2017-10-27
-categories: [abroad,lady,y2018]
+categories: [japan,abroad,lady,y2018]
 thumbnail: /assets/img/posts/20171027_00.jpg
 description: フィジー共和国は300以上の島々からなる群島国家で、その7割以上の国民はビチレブ島に住んでいます。
 ---
