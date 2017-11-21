@@ -9,7 +9,8 @@ module Jekyll
         'spring' => '温泉',
         'lady' => '女子旅',
         'abroad' => '海外旅行',
-        'man' => '男子旅'
+        'man' => '男子旅',
+        'drama' => 'ドラマロケ地'
       }
       input.map(&:to_s).uniq.map { |item| translate[item] }.join(',')
     end
