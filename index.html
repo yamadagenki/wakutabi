@@ -160,6 +160,29 @@ url: /
         {% endfor %}
       </div>
     </div>
+  </div>
 
+  <div class="row">
+    <div class="col-xs-12 col-sm-6 mt30">
+      <h3><a href="{{ site.base_path }}/categories/drama">ドラマロケ地</a></h3>
+      <div class="row">
+        {% for post in site.categories.drama limit:2 %}
+        <div class="col-xs-12 col-sm-6 article-cards-two">
+          <span class="meta date">{{ post.date | date_to_string }}</span>
+          <a href="{{ post.url | prepend: site.base_path }}" class="article-cards__link" style="background-image: url({{ post.thumbnail | prepend: site.base_path }})"></a>
+          <a class='article-cards__title' href="{{ post.url | prepend: site.base_path }}">{{ post.title }}</a>
+        </div>
+        {% endfor %}
+      </div>
+      <hr class="mt30">
+      <div class="row">
+        {% for post in site.categories.drama limit:4 offset:2 %}
+        <div class="col-xs-12 col-sm-6">
+          <a class='article-cards__title' href="{{ post.url | prepend: site.base_path }}">{{ post.title }}</a>
+          <span class="meta date">{{ post.date | date_to_string }}</span>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
   </div>
 </div>
